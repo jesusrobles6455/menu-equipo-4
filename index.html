@@ -197,6 +197,133 @@
 
       .btn.primary:hover { background: #ffc95e; }
 
+      /* ---------- Secciones nuevas ---------- */
+      .sections {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 34px;
+      }
+
+      .section {
+        background: var(--navy-card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 26px 22px 24px;
+      }
+
+      .section h2 {
+        margin: 0 0 14px;
+        font-size: 1.35rem;
+        line-height: 1.25;
+        font-weight: 750;
+      }
+
+      .section h2::before {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 3px;
+        background: var(--accent);
+        margin-right: 10px;
+        vertical-align: 2px;
+      }
+
+      .section p {
+        margin: 0 0 14px;
+        color: var(--muted);
+        font-size: 0.98rem;
+      }
+
+      .section p strong { color: var(--text); }
+
+      .activity-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .activity-list li {
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 12px 16px;
+        font-size: 0.97rem;
+        color: var(--text);
+      }
+
+      .activity-list li strong { color: var(--sky); }
+
+      .status {
+        display: inline-block;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        border-radius: 999px;
+        padding: 4px 12px;
+        margin-bottom: 14px;
+      }
+
+      .status.done {
+        color: #7ee2a8;
+        border: 1px solid rgba(126, 226, 168, 0.45);
+        background: rgba(126, 226, 168, 0.08);
+      }
+
+      .status.partial {
+        color: var(--accent);
+        border: 1px solid rgba(242, 179, 61, 0.45);
+        background: rgba(242, 179, 61, 0.08);
+      }
+
+      .report-item {
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        padding: 16px 18px;
+        margin-bottom: 14px;
+      }
+
+      .project-title {
+        margin: 24px 0 12px;
+        font-size: 1.15rem;
+        font-weight: 750;
+        color: var(--text);
+      }
+
+      .project-title:first-of-type { margin-top: 4px; }
+
+      .project-title span {
+        color: var(--sky);
+        font-weight: 600;
+        font-size: 0.95rem;
+      }
+
+      .report-item h3 {
+        margin: 0 0 6px;
+        font-size: 1.05rem;
+        font-weight: 700;
+      }
+
+      .report-item p { margin: 0; }
+
+      .summary-line {
+        color: var(--text);
+        font-weight: 600;
+      }
+
+      .section .links {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .section .links .btn { flex: 1 1 220px; }
+
       /* ---------- Pie ---------- */
       footer {
         margin-top: 44px;
@@ -319,6 +446,150 @@
         </article>
 
       </main>
+
+      <div class="sections">
+
+        <!-- Actividades realizadas en el curso -->
+        <section class="section">
+          <h2>Actividades realizadas en el curso</h2>
+          <ul class="activity-list">
+            <li><strong>Alejandro Rafael Plascencia Lopez — Sublisant (Módulo 3)</strong>: proyecto de sublimación con tinta ecológica de baja densidad; seguimiento en tablero de Jira; Sprint 3 cerrado el 28 de octubre de 2026.</li>
+            <li><strong>Luis Francisco Reyes Sandoval — Carnicería (Módulo 4)</strong>: plataforma para la gestión de una carnicería; 5 sprints del 29 de octubre de 2026 al 8 de enero de 2027; Sprint 1 cerrado el 12 de noviembre de 2026; seguimiento en Trello.</li>
+            <li><strong>Jesús Bernardo Robles Gómez — Comedor industrial (Módulos 2–4)</strong>: HU-01 terminada (formulario de edición y 7 pruebas unitarias, corte 16 de noviembre de 2026); HU-02 parcial; Sprint 1 en curso (4–25 de noviembre de 2026).</li>
+            <li><strong>En equipo (Módulo 4)</strong>: Actividad 1 — revisión de artefactos, propuesta de modificaciones, roles y calendarización; Actividad 2 — avance real y reporte de modificaciones; Actividad Integradora Final — menú del equipo, video del sistema, código fuente y registro individual en el gestor de proyectos.</li>
+          </ul>
+        </section>
+
+        <!-- Sistema implementado -->
+        <section class="section">
+          <h2>Sistema implementado</h2>
+          <p>
+            <strong>Sistema de Gestión de Inventarios y Requisiciones para Comedor Industrial</strong>,
+            aplicación web en React (Vite). Permite actualizar el stock, consultar el dashboard
+            de compras, visualizar el stock desde la cocina, gestionar solicitudes y requisiciones,
+            recibir alertas de stock mínimo y registrar reabastecimientos.
+          </p>
+          <span class="status partial">Estado actual: Sprint 1 parcial · HU-01 terminada</span>
+          <div class="links">
+            <a class="btn primary" href="https://youtu.be/_eDgEgUAOxA" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5z"/></svg>
+              Ver video
+            </a>
+            <a class="btn" href="https://github.com/jesusrobles6455/Sistema-inventario-comedor" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9.4 16.6 4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0 4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+              Repositorio GitHub
+            </a>
+          </div>
+        </section>
+
+        <!-- Código fuente (comprimido) -->
+        <section class="section">
+          <h2>Código fuente (comprimido)</h2>
+          <p>Descarga el código fuente de cada proyecto en formato .zip, directo desde GitHub.</p>
+          <div class="links">
+            <a class="btn primary" href="https://github.com/jesusrobles6455/Sistema-inventario-comedor/archive/refs/heads/main.zip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 21h16"/></svg>
+              Comedor industrial (.zip)
+            </a>
+            <a class="btn primary" href="https://github.com/alex99-ai/proyecto-sublisant/archive/refs/heads/main.zip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 21h16"/></svg>
+              Sublisant (.zip)
+            </a>
+          </div>
+        </section>
+
+        <!-- Reporte de las modificaciones realizadas -->
+        <section class="section">
+          <h2>Reporte de las modificaciones realizadas</h2>
+          <p>Reporte por proyecto, con los avances y ajustes de cada uno durante el curso.</p>
+
+          <h3 class="project-title">Comedor industrial <span>· Módulos 2–4</span></h3>
+          <p>Resumen del <strong>Sprint 1</strong> (4 al 25 de noviembre de 2026):</p>
+
+          <div class="report-item">
+            <span class="status done">Terminada</span>
+            <h3>HU-01 — Actualización de stock</h3>
+            <p>
+              Tarea 1.3, formulario de edición, el 12 de noviembre, y tarea 1.4,
+              pruebas unitarias, el 13 de noviembre. Historia cerrada el 13 de
+              noviembre; corte del avance el 16 de noviembre.
+            </p>
+          </div>
+
+          <div class="report-item">
+            <span class="status partial">Parcial</span>
+            <h3>HU-02 — Dashboard de compras</h3>
+            <p>
+              Tarea 2.2, filtro, terminada desde septiembre de 2026; tarea 2.1
+              parcial; tareas 2.3, totales, y 2.4, validación, programadas para
+              el 23 y 24 de noviembre.
+            </p>
+          </div>
+
+          <p class="summary-line">
+            Sprint 1 parcial: 5 tareas terminadas, 1 parcial y 2 por hacer;
+            HU-01 cerrada (corte 16 de noviembre de 2026).
+          </p>
+
+          <h3 class="project-title">Sublisant <span>· Módulo 3</span></h3>
+
+          <div class="report-item">
+            <span class="status done">Cerrado</span>
+            <h3>Sprint 3 — cerrado el 28 de octubre de 2026</h3>
+            <p>
+              Cierre técnico el 29 de octubre. Integración de Stripe (SDK,
+              PaymentIntents y webhook), formulario PCI-DSS, pantallas de éxito
+              y error, rastreo en el carrito y API de guías de envío
+              (ID-06, ID-07 e ID-08).
+            </p>
+          </div>
+
+          <div class="report-item">
+            <span class="status done">Terminado</span>
+            <h3>Sprint 2 — 21 de octubre de 2026</h3>
+            <p>
+              Optimización de imágenes del catálogo y motor de costos con
+              envío e IVA en tiempo real.
+            </p>
+          </div>
+
+          <h3 class="project-title">Carnicería <span>· Módulo 4</span></h3>
+
+          <div class="report-item">
+            <h3>Product Backlog reestructurado</h3>
+            <p>
+              Reestructurado por prioridad (Alta, Media, Baja) cruzada con
+              Story Points, protegiendo historias críticas como la facturación
+              (HU09) y el menú de productos (HU04).
+            </p>
+          </div>
+
+          <div class="report-item">
+            <h3>Sprint Backlog ajustado</h3>
+            <p>
+              Tareas atómicas diarias y fechas ajustadas desde el cierre del
+              Sprint 1 (12 de noviembre de 2026), con carga equilibrada de
+              38 a 58 horas por sprint.
+            </p>
+          </div>
+
+          <div class="report-item">
+            <span class="status done">Terminadas</span>
+            <h3>HU01 y HU02 — Sprint 1</h3>
+            <p>
+              HU03 a HU10 quedan por hacer, en los Sprints 2 a 5.
+            </p>
+          </div>
+
+          <p>
+            Retrospectiva del Sprint 1: estimación exacta — las 24 horas
+            planeadas coincidieron con el esfuerzo real — y pruebas unitarias
+            completadas sin errores.
+          </p>
+
+        </section>
+
+      </div>
 
       <footer>
         <strong>Equipo 4</strong> · Proyecto II — Desarrollo de Sistemas Web
