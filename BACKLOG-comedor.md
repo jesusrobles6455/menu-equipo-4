@@ -24,7 +24,7 @@ Nota: la HU-03 tiene 5 pts en el Product Backlog y 3 SP en el Sprint Backlog. Es
 
 ## Sprint Backlog
 
-### Sprint 1 — Gestión de Cuentas y Seguridad (4 al 25 de noviembre de 2026)
+### Sprint 1 — Actualización de Stock y Dashboard de Compras (4 al 25 de noviembre de 2026)
 
 Historias: HU-01, HU-02. Total: 13 SP. Objetivo: realizar la actualización de stock de la materia prima así como el Dashboard de consulta para compras. Resultado: parcial. El avance verificado en el repositorio es el código subido el 7 de septiembre de 2026 (tabla de inventario con semáforos, lógica de estados y filtro por categoría). El 11 de noviembre de 2026 se retomó el código con Vite + React (Pull Request #1 fusionado a main). Del 11 al 16 de noviembre se completaron las tareas 1.3 y 1.4; HU-01 quedó cerrada. Corte del avance (Actividad 2): 16 de noviembre de 2026; las tareas 2.3 y 2.4 siguen por hacer (23 y 24 de noviembre).
 
